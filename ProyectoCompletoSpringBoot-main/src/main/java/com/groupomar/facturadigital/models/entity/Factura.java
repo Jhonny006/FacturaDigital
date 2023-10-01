@@ -44,6 +44,10 @@ public class Factura implements Serializable {
         return descripcion;
     }
 
+    public void addItemFactura (ItemFactura item ){
+        this.items.add(item);
+    }
+
     public void setDescripcion(String descripcion) {
         this.descripcion = descripcion;
     }
@@ -81,3 +85,4 @@ public class Factura implements Serializable {
     }
     private static final Long serialVersionUID = 1L;
 }
+
